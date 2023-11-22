@@ -14,6 +14,7 @@ RUN apt-get update && \
     git \
     python3.11-dev \
     python3-pip \
+    python3-tk \
     openssh-server && \
     apt-get -y clean && \
     rm -rf /var/lib/apt/lists/*
