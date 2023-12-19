@@ -40,5 +40,5 @@ RUN echo 'PATH="$HOME/.local/bin:$PATH"' >> $HOME/.bashrc && \
 
 RUN echo 'source ~/.git-completion.bash' >> ~/.bashrc
 RUN echo 'source ~/.git-prompt.sh\nGIT_PS1_SHOWDIRTYSTATE=true' >> ~/.bashrc
-ENV PS1='${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]$(__git_ps1 " (%s)")\$ '
+ENV PS1='${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]$(__git_ps1 "(%s)")\$ '
 RUN echo "PS1='"${PS1}"'" >> ~/.bashrc
