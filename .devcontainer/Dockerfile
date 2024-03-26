@@ -1,12 +1,13 @@
-FROM ubuntu:22.04
+# FROM ubuntu:22.04
+FROM python:3.11-bullseye
 USER root
 
 
 ENV DEBIAN_FRONTEND=noninteractive
 
-RUN apt update && \
-    apt install software-properties-common -y && \
-    add-apt-repository ppa:deadsnakes/ppa -y
+# RUN apt update && \
+#     apt install software-properties-common -y && \
+#     add-apt-repository ppa:deadsnakes/ppa -y
 
 RUN apt-get update && \
     apt-get install -y --no-install-recommends \
@@ -15,8 +16,8 @@ RUN apt-get update && \
     vim \
     curl \
     tree \
-    python3.11-dev \
-    python3-pip \
+    # python3.11-dev \
+    # python3-pip \
     python3-tk \
     ca-certificates \
     openssh-server && \
