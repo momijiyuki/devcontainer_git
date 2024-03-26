@@ -4,7 +4,7 @@ gitを使用するためのコンテナのテンプレートとして
 
 ## wsl(or ubuntu)側での処理
 
-コンテナに`.ssh`と`.gitconfig`をマウントさせるため、存在しない場合はコンテナ作成が失敗する
+コンテナに`.ssh`と`.gitconfig`をマウントさせることで、wslでの設定を引き継ぐことができる
 
 ```sh
 $ sudo apt install git
